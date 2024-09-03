@@ -17,56 +17,11 @@ void display_menu()
 
 }
 
-void distance_selected()
-{
-    printf("Distance Selected\n");
-    printf("Please choose a conversion\n");
-    printf("Press (m) for meters to feet\n");
-    printf("Press (f) for feet to meters\n");
-    printf("Press (k) for kilometers to miles\n");
-    printf("Press (l) for miles to kilometers\n");
-    printf("Press (c) for centimeters to inches\n");
-    printf("Press (i) for inches to centimeters\n");
-    printf("Press (n) for nautical miles to kilometers\n");
-    printf("Press (j) for kilometers to nautical miles\n");
-    printf("Press (b) to go back\n");
-}
 
-void temperature_selected()
-{
-    printf("Temperature Selected\n");
-    printf("Please choose a conversion\n");
-    printf("Press (c) for celcius to fahrenheit\n");
-    printf("Press (f) for fahrenheit to celcius\n");
-    printf("Press (e) for celcius to kelvin\n");
-    printf("Press (k) for kelvin to celcius\n");
-    printf("Press (g) for fahrenheit to kelvin\n");
-    printf("Press (h) for kelvin to fahrenheit\n");
-    printf("Press (b) to go back\n");
-}
-
-void pressure_selected()
-{
-    printf("Pressure Selected\n");
-    printf("Please choose a conversion\n");
-    printf("Press (p) for psi to atm\n");
-    printf("Press (a) for atm to psi\n");
-    printf("Press (b) to go back\n");
-}
-
-void mass_selected()
-{
-    printf("Mass Selected\n");
-    printf("Please choose a conversion\n");
-    printf("Press (k) for kilograms to pounds\n");
-    printf("Press (p) for pounds to kilograms\n");
-    printf("Press (b) to go back\n");
-}
-
-
-float get_value()
+float get_value(char* thing)
 {
     float value = 0;
+    printf("Enter value in %s: ", thing);
     scanf(" %f", &value);
     return value;
 }
@@ -76,4 +31,71 @@ char get_choice()
     char choice = 0;
     scanf(" %c", &choice);
     return choice;
+}
+
+void print_result(float value1, char* thing1, float value2, char* thing2)
+{
+    printf("%.3f %s is %.3f %s\n", value1, thing1, value2, thing2);
+}
+
+
+void lamarr(){
+    printf("                                                 .........................   ......                 \n");
+    printf("                                              .  .....---++++++++++--......  ......                 \n");
+    printf("                                             ..-++++++++++++++++++++++++++++....                    \n");
+    printf("                                         ...+#++++##++++++++++++++++++++++++++++-..........         \n");
+    printf("                                         ..++++++++++++--+--------+++-+++++++++-+++++......         \n");
+    printf("                                         .++++++++++++++--+------+------+++++#+++++++++++-..        \n");
+    printf("                                        .-++++++++-+-+-+++--++++--------+++++++#++++++++++#..       \n");
+    printf("                                       ..++++++++++-++----+-+----+--------++++++++++++++++#-.       \n");
+    printf("                                      ..+##++++--+++-------+++-------------+++++++++++++++#+.       \n");
+    printf("                                      .-##++++++--------------++-----------++++++++++++++###-..     \n");
+    printf("                                  .....#++++++-------+-----------++----------+++++++#++++##+#...    \n");
+    printf("                                   ...+++++-+++---------------++++-+--------+++++++#####+###+..     \n");
+    printf("                                   ..-++++++++----++++-+----+-+++++++--------+++++#####++###+#-..   \n");
+    printf("                                ....-+++++++-+++++-+------+++++++++++++----+++++++#####++###++##... \n");
+    printf("                                .. -+++++++++++++--++--++--+---++++++++----+++++++#++++++###++###.. \n");
+    printf("                                ...#++++++++++++-+++++-----------++++++--+--+++++++++++####++####.. \n");
+    printf("                               ...-##+++#+--+++++++++---+--++--+----+++++++++++++++++#++##+#####-.. \n");
+    printf("                                ..+#++##++-++++--++++-++-++----++----+++++++++++++##+#++#++####+....\n");
+    printf("                                ..+#++##++-+-++---++----+---.--#+---+++++++++++++##+++#-#++####..  .\n");
+    printf("                            ....-++#++##+++++++--+++---+++----#+----++++++++++++##++#+...#######....\n");
+    printf("                         .. .. ######++#+++++++-+-++---++++-++-++++++++++#+++++#####.....#######....\n");
+    printf("                         ....-#+######+++++++++-+#+++-++++---++++++++++++++++++##++.....+#######.   \n");
+    printf("                     .......+#++#++####+#+++++++++++-+++++++--+++#+++++##+####++#+......########.   \n");
+    printf("              .. ..  ....+#####++####++##++-++++-+++++++++--++++##++++#######+++++.....##+##+###..  \n");
+    printf("         .......+#+-..###################+++#++++#+++#++++--+#+###+++#########++++.   .#########.   \n");
+    printf("        .-##########################++#+++++#+++++#+++++###++++############+++++++... .-########... \n");
+    printf("        .+####+#####################++++#++##+++++##+++####++++##+++#########++#++......######+...  \n");
+    printf("        .####################+......++++++####+++###+++#####+++##+++##########+##+..............    \n");
+    printf("      ...###############+.......   .-+++-+++##+++####++###-##+###+++#.+##########+.                 \n");
+    printf("   .....#############+.........    ..++++++++.#++#####+##......##+++#..##########..                 \n");
+    printf("   . .-###########+...   ..        ..+++++##...####-.#+#-......##+++#.-##########..                 \n");
+    printf("   ..###########...                ...######..................-##+++#.+#######+###.                 \n");
+    printf("   .###########....                .....###+.            .....#####+..#############..               \n");
+    printf("....##########.....                  .....#-.            ..#######+...#############..               \n");
+    printf("   .#########+. ...                  .....-#+..          ..............############..               \n");
+    printf("   +#########...                            .                          .###########..               \n");
+    printf("...#########...                                                       .-#########..                 \n");
+    printf(" ..##+#####+....                                                     ..##########..                 \n");
+    printf(" ..##+#####..                                                         .##########-.                 \n");
+    printf("...##+####.                                                           -##########+.                 \n");
+    printf("..-######+...                                                        .+###++#####+.                 \n");
+    printf("..+#+####....                                                        .+##########..                 \n");
+    printf(" .+######....                                                        .#####+#####..                 \n");
+    printf(" .-######....                                                      ...##########-..                 \n");
+    printf("...######....                                                      ...##########..                  \n");
+    printf("...#######...                                                      . .#########-...                 \n");
+    printf("  .+######...                                                      . .#########....                 \n");
+    printf("  ..#######..                                                       ..########-..                   \n");
+    printf("  ..#+####-..                                                      ..-########.....                 \n");
+    printf("   .#####-...                                                      ..+#######......                 \n");
+    printf("   ...+...                                                         ..#######-.                      \n");
+    printf("                                                                   ..######+.                       \n");
+    printf("                                                                   .-######..                       \n");
+    printf("                                                                   .######...                       \n");
+    printf("                                                                   .#####.                          \n");
+    printf("                                                                  ..####..                          \n");
+    printf("                                                                 ..-###..                           \n");
+    printf("                                                                  .--.....                          \n");
 }
