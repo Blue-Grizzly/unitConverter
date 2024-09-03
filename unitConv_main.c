@@ -13,21 +13,22 @@ int main()
 
         switch(choice)
         {
-            case 'd':
+            case '1':
                 distance_selected();
                 distance_menu();
                 break;
-            case 't':
+            case '2':
                 temperature_selected();
                 temperature_menu();
                 break;
-            case 'p':
-                //pressure
+            case '3':
+                pressure_selected();
+                pressure_menu();
                 break;
-            case 'm':
+            case '4':
                 //mass
                 break;
-            case('3'):
+            case('h'):
                 lamarr();
                 break;
             case 'q':
