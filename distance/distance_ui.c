@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 void distance_selected()
 {
     printf("Distance Selected\n");

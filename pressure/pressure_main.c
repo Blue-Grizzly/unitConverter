@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include"pressure_main.h"
+
 float atmosphere_to_pascal(float atm)
 {
     float pascal = atm * 101325;

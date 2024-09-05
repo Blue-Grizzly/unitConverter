@@ -1,4 +1,5 @@
-
+#include<stdio.h>
+#include"temperature_main.h"
 
 float celcius_to_fahrenheit(float celc)
 {

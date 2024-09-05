@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 void display_intro(){
         printf("\n---------------------------------------\n");
         printf("Unit converter\n");
